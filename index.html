@@ -2,49 +2,52 @@
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
-    <title>Metehan Muhammed Torun | Ana Sayfa</title>
+    <title>Metehan Muhammed Torun | Portfolyo</title>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
+
     <header>
-        <img src="https://avatars.githubusercontent.com/u/188701991?s=400&u=210e52faefc96b01c6349d306198125ed555232c&v=4" alt="Profil Fotoğrafı" width="200">
+        <img src="https://avatars.githubusercontent.com/u/188701991?s=400&u=210e52faefc96b01c6349d306198125ed555232c&v=4" alt="Profil Fotoğrafı" width="180">
         <h1>Metehan Muhammed Torun</h1>
-        <p>Bilgisayar Mühendisliği 3.Sınıf Öğrencisi</p>
+        <p>Bilgisayar Mühendisliği Öğrencisi & Araştırmacı</p>
     </header>
 
     <nav>
         <ul>
-            <li><a href="index.html">Ana Sayfa</a></li>
+            <li><a href="index.html" class="active">Ana Sayfa</a></li>
             <li><a href="about.html">Hakkımda</a></li>
-            <li><a href="interests.html">İlgi Alanlarım</a></li>
+            <li><a href="interests.html">Projeler & Yetkinlikler</a></li>
             <li><a href="contact.html">İletişim</a></li>
         </ul>
     </nav>
 
     <main>
-        <h2>Hoş Geldiniz</h2>
-        <p>Bu web sitesi, Web Programlama dersi kapsamında hazırlanmış örnek bir kişisel tanıtım sayfasıdır.</p>
-        <p>Daha fazla bilgi için <a href="about.html" target="_blank">Hakkımda</a> sayfasını ziyaret edebilirsiniz.</p>
+        <section class="intro">
+            <h2>Hakkımda</h2>
+            <p>Marmara Üniversitesi Bilgisayar Mühendisliği 3. sınıf öğrencisiyim. Teorik bilgiyi projelerle pratiğe dökmeyi hedefleyen, özellikle derin öğrenme, işletim sistemleri ve IoT alanlarına odaklanan bir mühendis adayıyım. Şu an aktif olarak <strong>TÜBİTAK 2209-A</strong> kapsamında derin öğrenme tabanlı deri lezyonu sınıflandırması üzerine çalışmaktayım.</p>
+        </section>
 
-        <h2 id="hizli-bilgiler">Ben kimim?</h2>
-        <ul>
-            <li>Üniversite: Marmara Üniversitesi</li>
-            <li>Bölüm: Bilgisayar Mühendisliği</li>
-            <li>İlgi Alanı: Web Teknolojileri</li>
-        </ul>
+        <div class="content-container">
+            <section class="main-column">
+                <h2>Öne Çıkan Akademik Projeler</h2>
+                <p><strong>TÜBİTAK 2209-A:</strong> 3B TBP görüntülerinde derin öğrenme modellerinin performans karşılaştırması ve deri lezyonu sınıflandırması üzerine araştırma yürütüyorum.</p>
+                <p><strong>İşletim Sistemleri - Deadlock Yönetimi:</strong> C dili ve ncurses kullanarak Bankacı Algoritması simülasyonu geliştirdim; bellek yönetimi ve sistem programlama üzerine çalıştım.</p>
+                <p><strong>VTYS - Otel Rezervasyon Sistemi:</strong> MSSQL ve PHP kullanarak; transaction, trigger ve rol tabanlı erişim kontrolü içeren kapsamlı bir yönetim sistemi tasarladım.</p>
+            </section>
 
-        <h2>Öğrenme Hedeflerim</h2>
-        <ol>
-            <li>HTML temellerini öğrenmek</li>
-            <li>CSS ile sayfa tasarlamak</li>
-            <li>JavaScript ile etkileşim eklemek</li>
-            <li>ASP.NET Core ile dinamik site geliştirmek</li>
-        </ol>
-
+            <aside class="side-column">
+                <h2>Teknik Beceriler</h2>
+                <p><strong>Diller:</strong> Java, Python, C, PHP, HTML.</p>
+                <p><strong>Gömülü Sistemler:</strong> ESP32, Arduino ve IoT sistem mimarisi.</p>
+                <p><strong>Backend & Veritabanı:</strong> MSSQL, MySQL, SQL (Transaction, Trigger, Stored Procedure) ve PHP PDO.</p>
+            </aside>
+        </div>
     </main>
 
-    <hr>
     <footer>
-        <p>© 2026 Metehan Muhammed Torun | Tüm Hakları Saklıdır. </p>
+        <p>© 2026 Metehan Muhammed Torun | <a href="https://www.linkedin.com/in/metehan-muhammed-torun/" target="_blank">LinkedIn</a> | <a href="https://github.com/metehantorun" target="_blank">GitHub</a></p>
     </footer>
+
 </body>
 </html>
