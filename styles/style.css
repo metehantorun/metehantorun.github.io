@@ -119,3 +119,66 @@ footer {
     border-top: none;
     border-radius: 0 0 8px 8px;
 }
+.contact-container {
+    width: 60%; 
+    margin: 40px auto;
+    padding: 30px; 
+    border: 1px solid #ddd; 
+    border-radius: 10px; 
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.contact-container h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.contact-container label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #003366;
+}
+
+
+.contact-container input, 
+.contact-container select, 
+.contact-container textarea {
+    width: 100%; 
+    padding: 12px; 
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; 
+}
+
+.btn-gonder {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 30px; 
+    border: none; 
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-gonder:hover {
+    background-color: #0056b3;
+}
+
+.btn-temizle {
+    background-color: #dc3545; 
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.btn-temizle:hover {
+    background-color: #a71d2a;
+}
