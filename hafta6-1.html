@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Öğrenci Not Hesaplama | Metehan Muhammed Torun</title>
+    <link rel="stylesheet" href="styles/lab6.css">
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link">← Ana Sayfaya Dön</a>
+        <h2>Öğrenci Not Hesaplama</h2>
+        
+        <div class="form-group" id="notFormu">
+            <input type="text" id="ogrenciAd" placeholder="Ad Soyad Giriniz" autocomplete="off">
+            <input type="number" id="vizeNot" placeholder="Vize Notu (%40)" autocomplete="off">
+            <input type="number" id="finalNot" placeholder="Final Notu (%60)" autocomplete="off">
+            <button onclick="hesaplaNot()">Hesapla</button>
+        </div>
+
+        <div id="sonucAlani" class="result-box" style="display:none;">
+            <h3 id="resAd" style="margin-bottom: 10px; color: #003366;"></h3>
+            <p id="resOrtalama"></p>
+            <p id="resHarf"></p>
+            <p id="resDurum" style="font-weight: bold;"></p>
+        </div>
+    </div>
+
+    <script src="scripts/hafta6-1.js"></script>
+</body>
+</html>

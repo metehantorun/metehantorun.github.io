@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Birim Dönüştürücü | Metehan Muhammed Torun</title>
+    <link rel="stylesheet" href="styles/lab6.css">
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link">← Ana Sayfaya Dön</a>
+        <h2>Birim Dönüştürücü</h2>
+        
+        <div class="form-group">
+            <label>Değer Giriniz:</label>
+            <input type="number" id="birimDeger" placeholder="Örn: 100">
+            
+            <label>Dönüşüm Tipi:</label>
+            <select id="donusumTipi">
+                <option value="c2f">Celsius -> Fahrenheit</option>
+                <option value="f2c">Fahrenheit -> Celsius</option>
+                <option value="m2k">Metre -> Kilometre</option>
+                <option value="k2g">Kilogram -> Gram</option>
+            </select>
+            
+            <button onclick="donustur()">Hesapla</button>
+        </div>
+
+        <div id="birimSonuc" class="result-box" style="display:none;">
+            <p id="resSonucText" style="font-weight: bold; color: #003366;"></p>
+        </div>
+    </div>
+
+    <script src="scripts/hafta6-2.js"></script>
+</body>
+</html>
