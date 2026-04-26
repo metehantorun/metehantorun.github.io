@@ -2,9 +2,11 @@
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Metehan Muhammed Torun | Portfolyo</title>
     <link rel="stylesheet" href="styles/style.css">
     <style>
+        /* Laboratuvar Uygulamaları Dropdown Stili */
         .lab-dropdown {
             position: relative;
             display: inline-block;
@@ -15,8 +17,10 @@
             background-color: #f9f9f9;
             min-width: 200px;
             box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            z-index: 1;
+            z-index: 10;
             border-radius: 5px;
+            top: 100%;
+            left: 0;
         }
         .lab-content a {
             color: #333 !important;
@@ -25,7 +29,9 @@
             display: block;
             text-align: left;
             border-bottom: 1px solid #eee;
+            font-weight: normal;
         }
+        .lab-content a:last-child { border-bottom: none; }
         .lab-content a:hover { background-color: #f1f1f1; }
         .lab-dropdown:hover .lab-content { display: block; }
         .lab-btn { font-weight: bold; color: #007bff !important; }
@@ -50,8 +56,8 @@
                 <a href="#" class="lab-btn">Laboratuvar Uygulamaları ▼</a>
                 <div class="lab-content">
                     <a href="hafta7.html">Hafta 7 (Bootstrap)</a>
-                    <a href="hafta6-1.html">Hafta 6-1 (Not Hesap)</a>
-                    <a href="hafta6-2.html">Hafta 6-2 (Birim Dön.)</a>
+                    <a href="hafta6-1.html">Hafta 6-1 (Not Hesaplama)</a>
+                    <a href="hafta6-2.html">Hafta 6-2 (Birim Dönüştürücü)</a>
                     <a href="lab-position.html">Hafta 5 (Position)</a>
                     <a href="flex.html">Hafta 4 (Flexbox)</a>
                 </div>
@@ -83,7 +89,10 @@
     </main>
 
     <footer>
-        <p>© 2026 Metehan Muhammed Torun | <a href="https://github.com/metehantorun" target="_blank">GitHub</a></p>
+        <p>© 2026 Metehan Muhammed Torun | 
+            <a href="https://www.linkedin.com/in/metehan-muhammed-torun/" target="_blank">LinkedIn</a> | 
+            <a href="https://github.com/metehantorun" target="_blank">GitHub</a>
+        </p>
     </footer>
 
 </body>
