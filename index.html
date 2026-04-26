@@ -4,11 +4,37 @@
     <meta charset="UTF-8">
     <title>Metehan Muhammed Torun | Portfolyo</title>
     <link rel="stylesheet" href="styles/style.css">
+    <style>
+        .lab-dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .lab-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 200px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            border-radius: 5px;
+        }
+        .lab-content a {
+            color: #333 !important;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+        }
+        .lab-content a:hover { background-color: #f1f1f1; }
+        .lab-dropdown:hover .lab-content { display: block; }
+        .lab-btn { font-weight: bold; color: #007bff !important; }
+    </style>
 </head>
 <body>
 
     <header>
-        <img src="https://avatars.githubusercontent.com/u/188701991?s=400&u=210e52faefc96b01c6349d306198125ed555232c&v=4" alt="Profil Fotoğrafı" width="180">
+        <img src="https://avatars.githubusercontent.com/u/188701991?s=400" alt="Profil Fotoğrafı" width="180">
         <h1>Metehan Muhammed Torun</h1>
         <p>Bilgisayar Mühendisliği Öğrencisi & Araştırmacı</p>
     </header>
@@ -19,38 +45,45 @@
             <li><a href="about.html">Hakkımda</a></li>
             <li><a href="interests.html">Projeler & Yetkinlikler</a></li>
             <li><a href="contact.html">İletişim</a></li>
-            <li><a href="flex.html">Flexbox Tasarımı</a></li>
-            <li><a href="lab-position.html">Position Duyuru</a></li>
-            <li><a href="hafta6-1.html">Hafta 6-1 (Not Hesaplama)</a></li>
-            <li><a href="hafta6-2.html">Hafta 6-2 (Birim Dönüştürücü)</a></li>
+            
+            <li class="lab-dropdown">
+                <a href="#" class="lab-btn">Laboratuvar Uygulamaları ▼</a>
+                <div class="lab-content">
+                    <a href="hafta7.html">Hafta 7 (Bootstrap)</a>
+                    <a href="hafta6-1.html">Hafta 6-1 (Not Hesap)</a>
+                    <a href="hafta6-2.html">Hafta 6-2 (Birim Dön.)</a>
+                    <a href="lab-position.html">Hafta 5 (Position)</a>
+                    <a href="flex.html">Hafta 4 (Flexbox)</a>
+                </div>
+            </li>
         </ul>
     </nav>
 
     <main>
         <section class="intro">
             <h2>Hakkımda</h2>
-            <p>Marmara Üniversitesi Bilgisayar Mühendisliği 3. sınıf öğrencisiyim. Teorik bilgiyi projelerle pratiğe dökmeyi hedefleyen, özellikle derin öğrenme, işletim sistemleri ve IoT alanlarına odaklanan bir mühendis adayıyım. Şu an aktif olarak <strong>TÜBİTAK 2209-A</strong> kapsamında derin öğrenme tabanlı deri lezyonu sınıflandırması üzerine çalışmaktayım.</p>
+            <p>Marmara Üniversitesi Bilgisayar Mühendisliği 3. sınıf öğrencisiyim. Özellikle derin öğrenme, işletim sistemleri ve IoT alanlarına odaklanan bir mühendis adayıyım. Şu an aktif olarak <strong>TÜBİTAK 2209-A</strong> kapsamında derin öğrenme tabanlı deri lezyonu sınıflandırması üzerine çalışmaktayım.</p>
         </section>
 
         <div class="content-container">
             <section class="main-column">
                 <h2>Öne Çıkan Akademik Projeler</h2>
-                <p><strong>TÜBİTAK 2209-A:</strong> 3B TBP görüntülerinde derin öğrenme modellerinin performans karşılaştırması ve deri lezyonu sınıflandırması üzerine araştırma yürütüyorum.</p>
-                <p><strong>İşletim Sistemleri - Deadlock Yönetimi:</strong> C dili ve ncurses kullanarak Bankacı Algoritması simülasyonu geliştirdim; bellek yönetimi ve sistem programlama üzerine çalıştım.</p>
-                <p><strong>VTYS - Otel Rezervasyon Sistemi:</strong> MSSQL ve PHP kullanarak; transaction, trigger ve rol tabanlı erişim kontrolü içeren kapsamlı bir yönetim sistemi tasarladım.</p>
+                <p><strong>TÜBİTAK 2209-A:</strong> Derin öğrenme modelleriyle deri lezyonu sınıflandırması araştırması.</p>
+                <p><strong>İşletim Sistemleri:</strong> Bankacı Algoritması simülasyonu ve sistem programlama.</p>
+                <p><strong>VTYS:</strong> MSSQL ve PHP ile kapsamlı Otel Rezervasyon Sistemi.</p>
             </section>
 
             <aside class="side-column">
                 <h2>Teknik Beceriler</h2>
-                <p><strong>Diller:</strong> Java, Python, C, PHP, HTML, JavaScript.</p>
-                <p><strong>Gömülü Sistemler:</strong> ESP32, Arduino ve IoT sistem mimarisi.</p>
-                <p><strong>Backend & Veritabanı:</strong> MSSQL, MySQL, SQL (Transaction, Trigger, Stored Procedure) ve PHP PDO.</p>
+                <p><strong>Diller:</strong> Java, Python, C, PHP, JS.</p>
+                <p><strong>Gömülü:</strong> ESP32, Arduino, IoT.</p>
+                <p><strong>DB:</strong> MSSQL, MySQL, PHP PDO.</p>
             </aside>
         </div>
     </main>
 
     <footer>
-        <p>© 2026 Metehan Muhammed Torun | <a href="https://www.linkedin.com/in/metehan-muhammed-torun/" target="_blank">LinkedIn</a> | <a href="https://github.com/metehantorun" target="_blank">GitHub</a></p>
+        <p>© 2026 Metehan Muhammed Torun | <a href="https://github.com/metehantorun" target="_blank">GitHub</a></p>
     </footer>
 
 </body>
