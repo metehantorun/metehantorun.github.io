@@ -36,7 +36,7 @@ regForm.addEventListener('submit', function(event) {
             </div>
         `;
         resultArea.scrollIntoView({ behavior: 'smooth' });
-        return; 
+        return;
     }
 
     resultArea.style.display = 'block';
@@ -45,11 +45,11 @@ regForm.addEventListener('submit', function(event) {
             <div class="card-body p-4">
                 <h4 class="fw-bold text-success mb-3">✓ Başvuru Özeti Oluşturuldu</h4>
                 <div class="row g-3">
-                    <div class="col-sm-6"><p class="mb-1 fw-semibold">Katılımcı:</p><p class="text-secondary">${name}</p></div>
-                    <div class="col-sm-6"><p class="mb-1 fw-semibold">E-posta:</p><p class="text-secondary">${email}</p></div>
-                    <div class="col-sm-6"><p class="mb-1 fw-semibold">Bölüm / Sınıf:</p><p class="text-secondary">${dept} - ${grade}</p></div>
-                    <div class="col-sm-6"><p class="mb-1 fw-semibold">Oturum / Tür:</p><p class="text-secondary">${session} (${mode})</p></div>
-                    <div class="col-12"><p class="mb-1 fw-semibold">Mesajınız:</p><p class="text-secondary italic">"${msg || 'Mesaj girilmedi.'}"</p></div>
+                    <div class="col-sm-6"><p class="mb-1 fw-semibold">Katılımcı:</p><p class="opacity-75">${name}</p></div>
+                    <div class="col-sm-6"><p class="mb-1 fw-semibold">E-posta:</p><p class="opacity-75">${email}</p></div>
+                    <div class="col-sm-6"><p class="mb-1 fw-semibold">Bölüm / Sınıf:</p><p class="opacity-75">${dept} - ${grade}</p></div>
+                    <div class="col-sm-6"><p class="mb-1 fw-semibold">Oturum / Tür:</p><p class="opacity-75">${session} (${mode})</p></div>
+                    <div class="col-12"><p class="mb-1 fw-semibold">Mesajınız:</p><p class="opacity-75 italic">"${msg || 'Mesaj girilmedi.'}"</p></div>
                 </div>
             </div>
         </div>
